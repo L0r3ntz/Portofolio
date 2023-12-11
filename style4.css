@@ -1,0 +1,61 @@
+*{
+    font-family: 'General Sans';
+    padding: 0;
+    margin: 0;
+    /* background-color: black; */
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.Header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Menambahkan z-index untuk menempatkan navigasi di depan konten */
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px;
+}
+
+nav ul li{
+    display: inline-table;
+    margin: 0px 25px;
+    list-style: none;
+}
+
+nav ul li a{
+    border: 5px solid transparent;
+    transition: border ease-in 0.2s;
+  border-radius: 20px;
+  padding: 10px;
+  color:white;
+  font-weight: 600;
+}
+
+nav ul li a:hover{
+    border: 5px solid white;
+    transition: border ease-out 0.2s;
+}
+.image-grid{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.gallery img{
+    width: 100%;
+}

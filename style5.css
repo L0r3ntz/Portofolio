@@ -1,0 +1,114 @@
+*{
+    font-family: 'General Sans';
+    padding: 0;
+    margin: 0;
+    /* background-color: black; */
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.Header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Menambahkan z-index untuk menempatkan navigasi di depan konten */
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px;
+}
+
+nav ul li{
+    display: inline-table;
+    margin: 0px 25px;
+    list-style: none;
+}
+
+nav ul li a{
+    border: 5px solid transparent;
+    transition: border ease-in 0.2s;
+  border-radius: 20px;
+  padding: 10px;
+  color:white;
+  font-weight: 600;
+}
+
+nav ul li a:hover{
+    border: 5px solid white;
+    transition: border ease-out 0.2s;
+}
+#bar-skill{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+  }
+  
+  .skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+  }
+  
+  .skill-per{
+    color: black;
+    height: 14px;
+    background: white;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  
+  @keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }

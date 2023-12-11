@@ -1,0 +1,96 @@
+*{
+    font-family: 'General Sans';
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.Header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Menambahkan z-index untuk menempatkan navigasi di depan konten */
+  }
+  
+  nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 100px;
+  }
+  
+  nav ul li{
+      display: inline-table;
+      margin: 0px 25px;
+      list-style: none;
+  }
+  
+  nav ul li a{
+    border: 5px solid transparent;
+    transition: border ease-in 0.2s;
+  border-radius: 20px;
+  padding: 10px;
+  color:white;
+  font-weight: 600;
+}
+
+nav ul li a:hover{
+    border: 5px solid white;
+    transition: border ease-out 0.2s;
+}
+  
+  .scroll-text{
+    padding: 190px 0 0px 0;
+  }
+  .text-wrapper1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 100px;
+    white-space: nowrap;
+    padding: 0 5rem;
+    letter-spacing: 1px;
+    animation: kanan-kiri 6000ms linear infinite;
+  }
+  
+  @keyframes kanan-kiri {
+    0% {
+      transform: translateX(0);
+    }  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 10% 4% 10%;
+  
+  }
+  
+  .about-me h3{
+    font-size: 50px;
+    padding: 20px 0 20px 0;
+  }
+  .about-me p{
+    margin: 0 23% 0 0;
+  }
+  
+  img{
+    width: 35%;
+    /* border-radius: 100px; */
+    clip-path: circle(38%);
+    /* top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0; */
+    filter: grayscale(100%);
+  }  

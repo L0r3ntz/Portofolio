@@ -1,0 +1,84 @@
+*{
+    font-family: 'General Sans';
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.Header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Menambahkan z-index untuk menempatkan navigasi di depan konten */
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px;
+}
+
+nav ul li{
+    display: inline-table;
+    margin: 0px 25px;
+    list-style: none;
+}
+
+nav ul li a{
+    border: 5px solid transparent;
+    transition: border ease-in 0.2s;
+  border-radius: 20px;
+  padding: 10px;
+  color:white;
+  font-weight: 600;
+}
+
+nav ul li a:hover{
+    border: 5px solid white;
+    transition: border ease-out 0.2s;
+}
+
+.container{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.container .contact-text{
+    font-size: 200%;
+    padding-bottom: 50px;
+}
+.container .contact-text h1{
+    transition: font-size ease-in-out 0.2s; /* Menerapkan transition ke font-size */
+    -webkit-transition: font-size ease-in-out 0.2s; /* Prefix untuk WebKit (Chrome, Safari) */
+    -moz-transition: font-size ease-in-out 0.2s; /* Prefix untuk Mozilla (Firefox) */
+    -o-transition: font-size ease-in-out 0.2s;
+    font-size: 200%;
+}
+.container .contact-text h1:hover{
+    font-size: 300%;
+    transition: all ease-in-out 0.2s;
+}
+
+.social-media{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.email img{
+    width: 100px;
+}
+.phone img{
+    width: 100px;
+}
+.behance img{
+    width: 100px;
+}
+.instagram img{
+    width: 100px;
+}
+.github img{
+    width: 100px;
+}
